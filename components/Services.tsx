@@ -75,9 +75,14 @@ const Services: React.FC = () => {
                 ))}
               </ul>
               
-              <button className="mt-10 w-full py-4 rounded-xl font-bold text-white bg-blue-900 hover:bg-blue-800 transition-colors">
-                Pesan Layanan
-              </button>
+              <a
+  href="https://wa.me/6285736360363?text=Halo%20Mantri%20Home%20Care,%20saya%20tertarik%20dengan%20paketnys.%20Boleh%20tanya%20lebih%20lanjut?"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-10 w-full py-4 bg-blue-700 text-white rounded-full font-bold hover:bg-blue-800 block text-center"
+>
+  Pesan Layanan
+</a>
             </div>
           ))}
         </div>
