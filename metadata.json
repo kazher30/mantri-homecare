@@ -1,0 +1,7 @@
+{
+  "name": "Mantri Home Care - Jasa Khitan & Perawatan Luka",
+  "description": "Website profesional untuk layanan Mantri Home Care yang menyediakan jasa khitan modern dan perawatan luka panggilan ke rumah, dilengkapi dengan tips kesehatan cerdas bertenaga AI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
