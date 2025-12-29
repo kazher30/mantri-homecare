@@ -100,9 +100,14 @@ const HealthTips: React.FC = () => {
             <h4 className="text-2xl font-bold mb-2">Punya pertanyaan medis khusus?</h4>
             <p className="text-blue-100 opacity-90">Tim Mantri Home Care siap memberikan konsultasi personal gratis untuk kondisi kesehatan Anda.</p>
           </div>
-          <button className="whitespace-nowrap bg-white text-blue-900 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-colors shadow-lg">
-            Tanya Via WhatsApp
-          </button>
+          <a
+  href="https://wa.me/6285736360363?text=Halo%20Mantri%20Home%20Care,%20saya%20punya%20pertanyaan%20tentang%20layanan%20home%20care/khitan/luka.%20Bisa%20dibantu%20konsultasi%20gratis?"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-blue-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition whitespace-nowrap"
+>
+  Tanya Via WhatsApp
+</a>
         </div>
       </div>
     </section>
