@@ -32,7 +32,7 @@ const HealthTips: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="tips-kesehatan" className="py-16 bg-gray-50">
     <div className="max-w-6xl mx-auto px-4">
       <h2 className="text-3xl font-bold text-blue-900 mb-2">TIPS KESEHATAN AI</h2>
       <h3 className="text-2xl font-semibold text-blue-800 mb-4">Informasi Kesehatan Terpercaya</h3>
