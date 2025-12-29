@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
   const faqs: FAQItem[] = [
     {
       question: "Berapa perkiraan biaya khitan di Mantri Home Care?",
-      answer: "Biaya khitan kami sangat kompetitif dan bervariasi tergantung metode yang dipilih (Suoer Ring, Super Sealer, Super Counter, atau metode lainnya). Paket standar sudah termasuk tindakan, obat-obatan pasca-khitan, celana sunat, dan satu kali kontrol gratis. Untuk detail harga terbaru, silakan hubungi kami via WhatsApp."
+      answer: "Biaya khitan kami sangat kompetitif dan bervariasi tergantung metode yang dipilih (Super Ring, Super Sealer, Super Counter, atau metode lainnya). Paket standar sudah termasuk tindakan, obat-obatan pasca-khitan, celana sunat, dan satu kali kontrol gratis. Untuk detail harga terbaru, silakan hubungi kami via WhatsApp."
     },
     {
       question: "Apa saja persiapan yang harus dilakukan sebelum anak dikhitan?",
