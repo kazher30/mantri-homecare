@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
 
           {/* Lokasi digabung di sini */}
           <li className="mt-6 pt-4 border-t border-blue-800">
-            <a href="#lokasi-maps" className="block hover:text-gray-300 transition-colors mb-1">Lihat Peta di Website</a>
+            <p className="font-semibold mb-2">Lokasi Praktek</p>
             <a 
               href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
               target="_blank" 
