@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     { name: 'Beranda', href: '#hero' },
     { name: 'Layanan', href: '#layanan' },
     { name: 'Tips Kesehatan', href: '#tips-kesehatan' },
-    { name: 'Lokasi & Ulasan', href: 'https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8' },
+    { name: 'Lokasi & Ulasan', href: '#lokasi-maps' },
     { name: 'Hubungi Kami', href: '#contact' },
   ];
 
