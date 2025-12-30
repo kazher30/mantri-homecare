@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
           <li><a href="#hero" className="hover:text-gray-300 transition-colors">Beranda</a></li>
           <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Layanan Kami</a></li>  {/* sesuaikan #layanan dengan id section layanan */}
           <li><a href="#tips-kesehatan" className="hover:text-gray-300 transition-colors">Tips Kesehatan</a></li>
-
-          {/* Lokasi digabung di sini */}
+          
+          {/* Grup Lokasi dipindah ke atas */}
           <li className="mt-6 pt-4 border-t border-blue-800">
             <p className="font-semibold mb-2">Lokasi Praktek</p>
             <a 
