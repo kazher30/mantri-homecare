@@ -38,16 +38,23 @@ const Navbar: React.FC = () => {
         
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-blue-500 ${
-                isScrolled ? 'text-gray-600' : 'text-white'
-              }`}
-            >
-              {link.name}
-            </a>
-          ))}
+    <a
+      key={link.name}
+      href={link.href}
+      onClick={(e) => {
+        e.preventDefault();  // cegah lompat kasar
+        const element = document.getElementById(link.href.replace('#', ''));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }}
+      className={`text-sm font-medium transition-colors hover:text-blue-500 ${
+        isScrolled ? 'text-gray-600' : 'text-white'
+      }`}
+    >
+      {link.name}
+    </a>
+  ))}
         </div>
 
         <a 
