@@ -16,39 +16,6 @@ const App: React.FC = () => {
       <Services />
       <HealthTips />
       <FAQ />
-      <section id="lokasi-maps" className="py-24 bg-gray-50">
-  <div className="max-w-6xl mx-auto px-6">
-    <div className="text-center mb-12">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4">LOKASI PRAKTEK & ULASAN GOOGLE</h2>
-      <p className="text-xl text-gray-700">
-        Temukan lokasi Mantri Home Care dan baca ulasan langsung dari pasien kami di Google
-      </p>
-    </div>
-
-    <div className="w-full h-96 md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.284315391!2d112.0999999!3d-7.7999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e785d8e9b1e4b9f%3A0x9e0f0e4b9f6e0f6e!2sMantri%20Home%20Care!5e0!3m2!1sid!2sid!4v1700000000000"
-    width="100%"
-    height="100%"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-
-    <div className="text-center mt-12">
-      <a
-        href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-transform hover:scale-105"
-      >
-        Buka Google Maps Lengkap (Lihat Semua Ulasan, Foto & Direction)
-      </a>
-    </div>
-  </div>
-</section>
       <BookingForm />
       <Footer />
       

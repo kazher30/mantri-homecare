@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     { name: 'Beranda', href: '#hero' },
     { name: 'Layanan', href: '#layanan' },
     { name: 'Tips Kesehatan', href: '#tips-kesehatan' },
-    { name: 'Lokasi & Ulasan', href: '#lokasi-maps' },
+    { name: 'Lokasi & Ulasan', href: 'https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8' },
     { name: 'Hubungi Kami', href: '#contact' },
   ];
 
@@ -39,32 +39,33 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
           <a
-            key={link.name}
-            href={link.href}
-            onClick={(e) => {
-            e.preventDefault();
-        
-            const targetId = link.href.replace('#', '');
-            const element = document.getElementById(targetId);
-        
-            if (element) {
+      key={link.name}
+      href={link.href}
+      target={link.href.startsWith('http') ? '_blank' : undefined}
+      rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+      onClick={(e) => {
+        if (link.href.startsWith('#')) {
+          e.preventDefault();
+          const targetId = link.href.replace('#', '');
+          const element = document.getElementById(targetId);
+          if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-            // Kalau element belum ada (delay render), coba lagi setelah 300ms
-          setTimeout(() => {
-            const retryElement = document.getElementById(targetId);
-            if (retryElement) {
-              retryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+          } else {
+            setTimeout(() => {
+              const retryElement = document.getElementById(targetId);
+              if (retryElement) {
+                retryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
             }, 300);
-            }
-            }}
-          className={`text-sm font-medium transition-colors hover:text-blue-500 ${
-          isScrolled ? 'text-gray-600' : 'text-white'
-        }`}
-      >
-        {link.name}
-      </a>
+          }
+        }
+      }}
+      className={`text-sm font-medium transition-colors hover:text-blue-500 ${
+        isScrolled ? 'text-gray-600' : 'text-white'
+      }`}
+    >
+      {link.name}
+    </a>
     ))}
 </div>
 
