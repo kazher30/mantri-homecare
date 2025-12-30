@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import L from 'leaflet';
 
@@ -18,24 +17,22 @@ const BookingForm: React.FC = () => {
 
   useEffect(() => {
     if (mapRef.current && !leafletMap.current) {
-      // Fix Leaflet icon error di build
-    delete (L.Icon.Default.prototype as any)._getIconUrl;
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-      iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-      shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-    });
+      // FIX LEAFLET ICON ERROR DI PRODUCTION/BUILD VERCEL (WAJIB DI ATAS!)
+      delete (L.Icon.Default.prototype as any)._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+      });
 
-    leafletMap.current = L.map(mapRef.current).setView([formData.lat, formData.lng], 11);
-      
-      // Initialize Map
+      // Inisialisasi map (hanya sekali)
       leafletMap.current = L.map(mapRef.current).setView([formData.lat, formData.lng], 11);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(leafletMap.current);
 
-      // Add Service Area Circle (Kediri approximation)
+      // Lingkaran area layanan Kediri
       L.circle([-7.93079, 112.02463], {
         color: '#3b82f6',
         fillColor: '#3b82f6',
@@ -43,42 +40,48 @@ const BookingForm: React.FC = () => {
         radius: 35000 // 35km radius
       }).addTo(leafletMap.current).bindPopup('Area Layanan Utama MANTRI HOME CARE');
 
-      // Marker for user selection
+      // Marker draggable
       markerRef.current = L.marker([formData.lat, formData.lng], {
         draggable: true
       }).addTo(leafletMap.current);
 
+      // Event drag marker
       markerRef.current.on('dragend', (event) => {
         const marker = event.target;
         const position = marker.getLatLng();
         setFormData(prev => ({ ...prev, lat: position.lat, lng: position.lng }));
       });
 
+      // Event klik peta
       leafletMap.current.on('click', (e) => {
         const { lat, lng } = e.latlng;
         markerRef.current?.setLatLng([lat, lng]);
-        setFormData(prev => ({ ...prev, lat, lng }));
+        setFormData(prev => ({ ...prev, lat: lat, lng: lng }));
       });
     }
 
+    // Cleanup saat component unmount
     return () => {
       if (leafletMap.current) {
         leafletMap.current.remove();
         leafletMap.current = null;
       }
     };
-  }, []);
+  }, []); // dependency kosong karena hanya init sekali
 
   const handleUseMyLocation = () => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        const { latitude, longitude } = position.coords;
-        setFormData(prev => ({ ...prev, lat: latitude, lng: longitude }));
-        leafletMap.current?.setView([latitude, longitude], 15);
-        markerRef.current?.setLatLng([latitude, longitude]);
-      }, (error) => {
-        alert("Gagal mendapatkan lokasi: " + error.message);
-      });
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          setFormData(prev => ({ ...prev, lat: latitude, lng: longitude }));
+          leafletMap.current?.setView([latitude, longitude], 15);
+          markerRef.current?.setLatLng([latitude, longitude]);
+        },
+        (error) => {
+          alert("Gagal mendapatkan lokasi: " + error.message);
+        }
+      );
     } else {
       alert("Geolokasi tidak didukung oleh browser ini.");
     }
@@ -87,11 +90,7 @@ const BookingForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const googleMapsUrl = `https://www.google.com/maps?q=${formData.lat},${formData.lng}`;
-    const text = `Halo Mantri Home Care, 
-Nama: ${formData.name}
-Layanan: ${formData.service}
-Pesan: ${formData.message}
-Lokasi Saya: ${googleMapsUrl}`;
+    const text = `Halo Mantri Home Care,\nNama: ${formData.name}\nLayanan: ${formData.service}\nPesan: ${formData.message}\nLokasi Saya: ${googleMapsUrl}`;
     
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/6285736360363?text=${encodedText}`, '_blank');
