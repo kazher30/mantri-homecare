@@ -29,23 +29,21 @@ const Footer: React.FC = () => {
       <div>
         <h4 className="font-bold text-xl mb-6">Tautan Cepat</h4>
         <ul className="space-y-4">
-          <li><a href="#hero" className="hover:text-gray-300 transition-colors">Beranda</a></li>
-          <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Layanan Kami</a></li>  {/* sesuaikan #layanan dengan id section layanan */}
-          <li><a href="#tips-kesehatan" className="hover:text-gray-300 transition-colors">Tips Kesehatan</a></li>
-          
-          {/* Grup Lokasi dipindah ke atas */}
-          <li className="mt-6 pt-4 border-t border-blue-800">
-            <p className="font-semibold mb-2">Lokasi Praktek</p>
-            <a 
-              href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block hover:text-gray-300 transition-colors"
-            >
-              Buka Google Maps (Ulasan & Direction)
-            </a>
-          </li>
-        </ul>
+  <li><a href="#hero" className="hover:text-gray-300 transition-colors">Beranda</a></li>
+  <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Layanan Kami</a></li>
+  <li><a href="#tips-kesehatan" className="hover:text-gray-300 transition-colors">Tips Kesehatan</a></li>
+  <li className="mt-6 pt-4 border-t border-blue-800">
+    <p className="font-semibold mb-2">Lokasi Praktek</p>
+    <a 
+      href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block hover:text-gray-300 transition-colors"
+    >
+      Buka Google Maps (Ulasan & Direction)
+    </a>
+  </li>
+</ul>
       </div>
 
       {/* Kolom Kanan: Layanan Utama - fix scroll ke section layanan */}
