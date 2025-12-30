@@ -19,18 +19,18 @@ const App: React.FC = () => {
     <BookingForm />
     <Footer />
 
-    {/* Floating WhatsApp Button - Pojok Kanan Bawah dengan Logo Resmi Mengkilap */}
+    {/* Floating WhatsApp Button - Pojok Kanan Bawah dengan Logo Resmi SVG Mengkilap */}
 <div className="fixed bottom-6 right-6 z-[9999]">
   <a
     href="https://wa.me/6285736360363?text=Halo%20Mantri%20Home%20Care,%20saya%20mau%20konsultasi%20layanan%20home%20care/khitan/perawatan%20luka.%20Bisa%20dibantu?"
     target="_blank"
     rel="noopener noreferrer"
-    className="block w-16 h-16 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-3xl animate-pulse"
+    className="block w-16 h-16 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-3xl animate-pulse bg-white p-2"
   >
     <img 
-      src="https://static.whatsapp.net/rsrc.php/v3/y7/r/JSx5YdvZqK_.png"
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
       alt="Chat WhatsApp Mantri Home Care"
-      className="w-full h-full object-cover rounded-full"
+      className="w-full h-full object-contain drop-shadow-md"
     />
   </a>
 </div>
