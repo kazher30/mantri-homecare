@@ -44,7 +44,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="layanan" className="py-24 bg-white">  {/* ID INI PENTING! Ganti jadi "services" kalau footer/navbar pakai itu */}
+    <section id="layanan" className="py-24 bg-white">  {/* 3 kartu layanan */}
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Layanan Unggulan Kami</h2>

@@ -4,10 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantri Home Care | Khitan & Perawatan Luka</title>
+    
+    <!-- Meta Title - Judul biru di Google (50-60 karakter ideal) -->
+    <title>Mantri Home Care Kediri - Khitan Modern & Perawatan Luka Rumah</title>
+    
+    <!-- Meta Description - Teks abu-abu di bawah title Google (150-160 karakter) -->
+    <meta name="description" content="Jasa khitan sunat modern tanpa nyeri (Super Ring/Sealer), perawatan luka diabetes/pasca operasi, home visit keperawatan di Kediri. Tenaga berlisensi, panggil ke rumah. Konsultasi gratis via WA!" />
+    
+    <!-- Keywords - Bantu Google paham topik -->
+    <meta name="keywords" content="khitan kediri, sunat kediri, khitan modern kediri, perawatan luka kediri, perawatan luka diabetes kediri, home care kediri, perawat panggilan kediri, sunat tanpa nyeri kediri, ganti perban kediri" />
+    
+    <!-- Open Graph / Social Media Share (WA, FB, IG) -->
+    <meta property="og:title" content="Mantri Home Care Kediri - Khitan Modern & Perawatan Luka di Rumah" />
+    <meta property="og:description" content="Layanan khitan tanpa nyeri dan perawatan luka profesional panggilan ke rumah di Kediri. Konsultasi gratis!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mantri-homecare.vercel.app" />
+    <meta property="og:image" content="https://mantri-homecare.vercel.app/og-image.jpg" /> <!-- nanti tambah gambar kalau ada -->
+    
+    <!-- Favicon (kalau belum ada, buat di realfavicongenerator.net) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS (kalau masih pakai maps) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -20,18 +45,20 @@
             z-index: 1;
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "leaflet": "https://esm.sh/leaflet@1.9.4"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+
+    <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "leaflet": "https://esm.sh/leaflet@1.9.4"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-gray-50 text-gray-900">
     <div id="root"></div>

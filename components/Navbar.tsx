@@ -13,12 +13,12 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Beranda', href: '#hero' },
-    { name: 'Layanan', href: '#layanan' },
-    { name: 'Tips Kesehatan', href: '#tips-kesehatan' },
-    { name: 'Lokasi & Ulasan', href: 'https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8' },
-    { name: 'Hubungi Kami', href: '#contact' },
-  ];
+  { name: 'Beranda', href: '#hero' },
+  { name: 'Layanan', href: '#layanan' },        // ← ke section layanan
+  { name: 'Tips Kesehatan', href: '#tips-kesehatan' },
+  { name: 'Lokasi & Ulasan', href: 'https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8' }, // external
+  { name: 'Hubungi Kami', href: '#contact' },   // ← ke form booking
+];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

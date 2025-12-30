@@ -96,7 +96,7 @@ Lokasi Saya: ${googleMapsUrl}`;
 
   return (
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
-      {/* sisa JSX form & map kamu tetap sama seperti asli */}
+      {/* form + peta */}
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
         <div className="lg:sticky lg:top-32">
           <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Pesan Layanan</h2>
