@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-blue-100/60 font-medium">
               <li><a href="#hero" className="hover:text-white transition-colors">Beranda</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Layanan Kami</a></li>
-              <li><a href="#tips" className="hover:text-white transition-colors">Tips Kesehatan</a></li>
+              <li><a href="#tips-kesehatan" className="hover:text-white transition-colors">Tips Kesehatan</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Hubungi Kami</a></li>
             </ul>
           </div>
@@ -44,6 +44,17 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-white transition-colors">Perawatan Luka Diabetes</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Luka Pasca Operasi</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Home Visit Medis</a></li>
+              <li><a href="#lokasi-maps" className="hover:text-white transition-colors">Lokasi Praktek</a></li>
+<li>
+  <a 
+    href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="hover:text-white transition-colors"
+  >
+    Buka Google Maps (Ulasan & Direction)
+  </a>
+</li>
             </ul>
           </div>
         </div>
