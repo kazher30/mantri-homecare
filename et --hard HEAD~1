@@ -1,0 +1,32 @@
+[33mfa27e91[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Konsisten id: layanan untuk section layanan, contact untuk form booking
+[33m8c8b2a5[m Fix Leaflet icon dengan CDN URL langsung (no import image) + id=contact,yang ke sekian
+[33mdbdee31[m Fix Leaflet icon dengan CDN URL langsung (no import image) + id=contact
+[33m5127be0[m Final fix Leaflet marker icon di production Vercel + id=contact untuk Hubungi Kami
+[33m6525214[m Final fix BookingForm: hapus duplikasi map, fix Leaflet icon production, id=contact untuk Hubungi Kami
+[33m0a3339e[m Fix Leaflet icon error untuk build Vercel + tambah id=contact untuk menu Hubungi Kami
+[33m98e03bc[m Tambah id=contact di BookingForm agar menu Hubungi Kami di navbar & footer berfungsi scroll
+[33mcba2e9e[m Fix sintaks error di App.tsx + optimasi SEO meta title & floating WA final
+[33m66f0470[m Fix floating WA button: satu button saja di pojok kanan bawah, hilang dobel di mobile
+[33macf9206[m Final fix floating WA button dengan logo SVG resmi WhatsApp mengkilap + tajam
+[33m1516ba7[m Update floating WA button dengan logo resmi WhatsApp mengkilap + pindah ke pojok kanan bawah
+[33mb3f2aca[m Fix floating WhatsApp button agar selalu muncul di pojok kiri bawah (desktop) & kanan bawah (mobile)
+[33m0127c67[m Fix floating WhatsApp button agar selalu kelihatan di kiri bawah (desktop) & kanan bawah (mobile)
+[33mbeaf73a[m Fix tombol Lihat Layanan Kami di hero + tambah floating WhatsApp button pojok kiri bawah
+[33mf388cd1[m Hapus embed peta dari web & ubah menu Lokasi & Ulasan jadi langsung buka Google Maps full di tab baru
+[33mfac43d4[m ganti peta Jakarta ke kediri
+[33m5f46d8b[m Tambah section Lokasi & Ulasan Google Maps di App.tsx + fix href navbar
+[33m1387f71[m Fix href Lokasi & Ulasan di navbar: hapus # yang salah agar scroll ke section peta
+[33m4300250[m link lokasi & ulaasan
+[33md48fbdd[m Fix final scroll navbar dengan retry timeout untuk handle delay render section
+[33mf51c9b3[m Fix scroll navbar dengan smooth scroll manual (berfungsi meskipun section belum load)
+[33m052b33b[m revisi hapus lihat peta di website
+[33m011a114[m hapus lihat di peta
+[33mc33a7f0[m Optimasi section Layanan: fix id untuk scroll, pesan WA personal per kartu
+[33mbe069b0[m Perbaiki footer sesuai desain asli: pindah Lokasi ke Tautan Cepat & fix scroll Layanan Utama
+[33m02588cc[m Fix Tautan Cepat footer: perbaiki href Tips Kesehatan jadi #tips-kesehatan & tambah link Google Maps
+[33m84daaf0[m Fix menu Tips Kesehatan agar langsung scroll ke bagian TIPS KESEHATAN AI
+[33m8d88feb[m Fix JSX runtime error dengan tambah import react/jsx-runtime
+[33m9a35819[m Fix tombol Tanya Via WhatsApp agar langsung buka chat WA
+[33m08835b7[m Fix tombol Pesan Layanan agar langsung ke WhatsApp
+[33m5674d5b[m Fix typo and update WhatsApp number
+[33m4c2592d[m Initial commit
