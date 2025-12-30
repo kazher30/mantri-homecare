@@ -27,13 +27,13 @@ const App: React.FC = () => {
 
     <div className="w-full h-96 md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.384957035148!2d106.789699315322!3d-6.208927462449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6e0b0f0e4b9%3A0x9e0f0e4b9f6e0f6e!2sMantri%20Home%20Care!5e0!3m2!1sid!2sid!4v1700000000000"
-        width="100%"
-        height="100%"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.284315391!2d112.0999999!3d-7.7999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e785d8e9b1e4b9f%3A0x9e0f0e4b9f6e0f6e!2sMantri%20Home%20Care!5e0!3m2!1sid!2sid!4v1700000000000"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
 
