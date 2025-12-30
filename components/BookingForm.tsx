@@ -18,6 +18,16 @@ const BookingForm: React.FC = () => {
 
   useEffect(() => {
     if (mapRef.current && !leafletMap.current) {
+      // Fix Leaflet icon error di build
+    delete (L.Icon.Default.prototype as any)._getIconUrl;
+    L.Icon.Default.mergeOptions({
+      iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+      iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+      shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+    });
+
+    leafletMap.current = L.map(mapRef.current).setView([formData.lat, formData.lng], 11);
+      
       // Initialize Map
       leafletMap.current = L.map(mapRef.current).setView([formData.lat, formData.lng], 11);
 
@@ -88,7 +98,7 @@ Lokasi Saya: ${googleMapsUrl}`;
   };
 
   return (
-    <section id="booking" className="py-24 bg-white relative overflow-hidden">
+    <section id="contact" className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
         <div className="lg:sticky lg:top-32">
           <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Pesan Layanan</h2>
