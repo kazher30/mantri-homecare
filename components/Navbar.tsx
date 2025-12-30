@@ -36,26 +36,37 @@ const Navbar: React.FC = () => {
           </span>
         </div>
         
-        <div className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
-    <a
-      key={link.name}
-      href={link.href}
-      onClick={(e) => {
-        e.preventDefault();  // cegah lompat kasar
-        const element = document.getElementById(link.href.replace('#', ''));
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }}
-      className={`text-sm font-medium transition-colors hover:text-blue-500 ${
-        isScrolled ? 'text-gray-600' : 'text-white'
-      }`}
-    >
-      {link.name}
-    </a>
-  ))}
-        </div>
+          <div className="hidden md:flex space-x-8">
+            {navLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.href}
+            onClick={(e) => {
+            e.preventDefault();
+        
+            const targetId = link.href.replace('#', '');
+            const element = document.getElementById(targetId);
+        
+            if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+            // Kalau element belum ada (delay render), coba lagi setelah 300ms
+          setTimeout(() => {
+            const retryElement = document.getElementById(targetId);
+            if (retryElement) {
+              retryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            }, 300);
+            }
+            }}
+          className={`text-sm font-medium transition-colors hover:text-blue-500 ${
+          isScrolled ? 'text-gray-600' : 'text-white'
+        }`}
+      >
+        {link.name}
+      </a>
+    ))}
+</div>
 
         <a 
           href="https://wa.me/6285736360363" 
