@@ -3,73 +3,75 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-900 text-white pt-24 pb-12">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-20">
-          <div className="col-span-2 space-y-8">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                </svg>
-              </div>
-              <span className="text-2xl font-black tracking-tight uppercase">Mantri Home Care</span>
-            </div>
-            <p className="text-blue-100/70 text-lg leading-relaxed max-w-md">
-              Membawa kenyamanan rumah ke dalam layanan kesehatan medis profesional. Fokus kami adalah kesehatan dan pemulihan pasien secara menyeluruh dengan sentuhan personal.
-            </p>
-            <div className="flex space-x-5">
-              {['facebook', 'instagram', 'youtube'].map((social) => (
-                <a key={social} href="#" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all">
-                  <span className="capitalize text-xs font-bold">{social.substring(0, 2)}</span>
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          <div className="space-y-6">
-            <h6 className="text-lg font-bold">Tautan Cepat</h6>
-            <ul className="space-y-4 text-blue-100/60 font-medium">
-              <li><a href="#hero" className="hover:text-white transition-colors">Beranda</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Layanan Kami</a></li>
-              <li><a href="#tips-kesehatan" className="hover:text-white transition-colors">Tips Kesehatan</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Hubungi Kami</a></li>
-            </ul>
-          </div>
-
-          <div className="space-y-6">
-            <h6 className="text-lg font-bold">Layanan Utama</h6>
-            <ul className="space-y-4 text-blue-100/60 font-medium">
-              <li><a href="#" className="hover:text-white transition-colors">Khitan Anak & Dewasa</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Perawatan Luka Diabetes</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Luka Pasca Operasi</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Home Visit Medis</a></li>
-              <li><a href="#lokasi-maps" className="hover:text-white transition-colors">Lokasi Praktek</a></li>
-<li>
-  <a 
-    href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="hover:text-white transition-colors"
-  >
-    Buka Google Maps (Ulasan & Direction)
-  </a>
-</li>
-            </ul>
-          </div>
+    <footer className="bg-blue-900 text-white py-12">
+  <div className="max-w-6xl mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      {/* Kolom Kiri: Logo & Deskripsi */}
+      <div>
+        <div className="flex items-center mb-4">
+          {/* Ganti dengan logo kamu kalau ada src */}
+          <div className="bg-white text-blue-900 rounded-full w-12 h-12 flex items-center justify-center text-3xl font-bold mr-3">+</div>
+          <h3 className="text-2xl font-bold">MANTRI HOME CARE</h3>
         </div>
-        
-        <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-blue-100/40 text-sm">
-            © {new Date().getFullYear()} Mantri Home Care. All rights reserved.
-          </p>
-          <div className="flex space-x-8 text-blue-100/40 text-sm">
-            <a href="#" className="hover:text-white transition-colors">Kebijakan Privasi</a>
-            <a href="#" className="hover:text-white transition-colors">Syarat & Ketentuan</a>
-          </div>
+        <p className="text-gray-300">
+          Membawa kenyamanan rumah ke dalam layanan kesehatan medis profesional. Fokus kami adalah kesehatan dan pemulihan pasien secara menyeluruh dengan sentuhan personal.
+        </p>
+
+        {/* Ikon Sosmed (sesuaikan link kalau ada) */}
+        <div className="flex space-x-4 mt-8">
+          <a href="#" className="bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-600">Fa</a>
+          <a href="#" className="bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-600">In</a>
+          <a href="#" className="bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center hover:bg-blue-600">Yo</a>
         </div>
       </div>
-    </footer>
+
+      {/* Kolom Tengah: Tautan Cepat + Lokasi (digabung) */}
+      <div>
+        <h4 className="font-bold text-xl mb-6">Tautan Cepat</h4>
+        <ul className="space-y-4">
+          <li><a href="#hero" className="hover:text-gray-300 transition-colors">Beranda</a></li>
+          <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Layanan Kami</a></li>  {/* sesuaikan #layanan dengan id section layanan */}
+          <li><a href="#tips-kesehatan" className="hover:text-gray-300 transition-colors">Tips Kesehatan</a></li>
+          <li><a href="#hubungi" className="hover:text-gray-300 transition-colors">Hubungi Kami</a></li>
+
+          {/* Lokasi digabung di sini */}
+          <li className="mt-6 pt-4 border-t border-blue-800">
+            <p className="font-semibold mb-2">Lokasi Praktek</p>
+            <a href="#lokasi-maps" className="block hover:text-gray-300 transition-colors mb-1">Lihat Peta di Website</a>
+            <a 
+              href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block hover:text-gray-300 transition-colors"
+            >
+              Buka Google Maps (Ulasan & Direction)
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Kolom Kanan: Layanan Utama - fix scroll ke section layanan */}
+      <div>
+        <h4 className="font-bold text-xl mb-6">Layanan Utama</h4>
+        <ul className="space-y-4">
+          <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Khitan Anak & Dewasa</a></li>
+          <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Perawatan Luka Diabetes</a></li>
+          <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Luka Pasca Operasi</a></li>
+          <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Home Visit Medis</a></li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Baris Bawah: Copyright & Kebijakan */}
+    <div className="border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+      <p>&copy; 2025 Mantri Home Care. All rights reserved.</p>
+      <div className="space-x-6 mt-4 md:mt-0">
+        <a href="/kebijakan-privasi" className="hover:text-gray-300 transition-colors">Kebijakan Privasi</a>
+        <a href="/syarat-ketentuan" className="hover:text-gray-300 transition-colors">Syarat & Ketentuan</a>
+      </div>
+    </div>
+  </div>
+</footer>
   );
 };
 
