@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a 
-              href="#services" 
+              href="#layanan" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl transition-all hover:-translate-y-1 text-center"
             >
               Lihat Layanan Kami
