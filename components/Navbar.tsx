@@ -26,15 +26,13 @@ const Navbar: React.FC = () => {
     }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <div className="flex items-center space-x-2">
-  <a href="#hero" className="flex items-center">
-    <img 
-      src="/logo.png"
-      alt="Mantri Home Care - Spesialis Rawat Luka & Sunat Modern Kediri"
-      className="h-12 w-auto"
-    />
-  </a>
-</div>
+          <a href="#hero" className="flex items-center">  
+            <img  
+              src="/logo.png"
+              alt="Mantri Home Care - Spesialis Rawat Luka & Sunat Modern Kediri"
+              className="h-12 w-auto"
+            />
+          </a>
           <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
             MANTRI HOME CARE
           </span>
