@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
               </div>
               <div>
                 <p className="text-gray-500 text-xs font-bold uppercase tracking-widest">Sertifikasi Resmi</p>
-                <p className="text-blue-900 font-extrabold">Tenaga Kesehatan Medis Berlisensi</p>
+                <p className="text-blue-900 font-extrabold">Tenaga Kesehatan Berlisensi</p>
               </div>
             </div>
           </div>
