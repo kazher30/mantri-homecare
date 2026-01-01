@@ -26,11 +26,15 @@ const Navbar: React.FC = () => {
     }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-            </svg>
-          </div>
+          <div className="flex items-center space-x-2">
+  <a href="#hero" className="flex items-center">
+    <img 
+      src="/logo.png"
+      alt="Mantri Home Care - Spesialis Rawat Luka & Sunat Modern Kediri"
+      className="h-12 w-auto"
+    />
+  </a>
+</div>
           <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
             MANTRI HOME CARE
           </span>
