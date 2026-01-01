@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center space-x-2">
           <a href="#hero" className="flex items-center">  
             <img  
-              src="/logo.png"
+              src="/logobulatMHC.png"
               alt="Mantri Home Care - Spesialis Rawat Luka & Sunat Modern Kediri"
               className="h-12 w-auto"
             />
