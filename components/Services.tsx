@@ -30,7 +30,7 @@ const Services: React.FC = () => {
     },
     {
       id: 'lainnya',
-      title: 'Layanan Medis Lainnya',
+      title: 'Layanan Kesehatan Lainnya',
       description: 'Layanan keperawatan tambahan seperti pemasangan kateter, infus, cek kesehatan berkala, hingga injeksi obat sesuai instruksi dokter.',
       features: ['Pasang/Ganti Kateter', 'Home Visit Keperawatan', 'Cek Gula Darah & Kolesterol', 'Injeksi / Pemberian Vitamin'],
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan medis lainnya (kateter/cek lab/injeksi). Boleh info lebih lanjut?',
