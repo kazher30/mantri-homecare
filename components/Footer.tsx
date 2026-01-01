@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <img 
         src="/logobulatMHC.png"  // atau /logo.svg kalau SVG
         alt="Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
+        className="h-16 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
       />
     </a>
   </div>
