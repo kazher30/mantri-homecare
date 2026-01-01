@@ -49,11 +49,12 @@ const Footer: React.FC = () => {
   </a>
 
   {/* Blogger */}
-  <a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="bg-orange-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-700 transition">
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M15.58 16.84c-.42.45-1.14.64-2.32.64-1.98 0-3.6-1.06-3.6-3.52 0-2.46 1.62-3.52 3.6-3.52.78 0 1.46.17 1.88.42v-2.02c-.62-.28-1.4-.48-2.34-.48-3.3 0-6 1.68-6 5.48 0 3.8 2.7 5.48 6 5.48 1.86 0 2.88-.56 3.78-1.3v-1.18zm-6.58-5.34c-.9 0-1.62.36-1.62 1.26s.72 1.26 1.62 1.26 1.62-.36 1.62-1.26-.72-1.26-1.62-1.26zm11-7.5v14c0 2.76-2.24 5-5 5h-14c-2.76 0-5-2.24-5-5v-14c0-2.76 2.24-5 5-5h14c2.76 0 5 2.24 5 5zm-4 10h-3v-6h-4v6h-3v-11h10v11z"/>
-    </svg>
-  </a>
+  {/* Blogger */}
+<a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="bg-orange-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-700 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M21.731 3.001H2.269C1.019 3.001 0 4.02 0 5.27v13.46c0 1.25 1.019 2.27 2.269 2.27h19.462c1.25 0 2.269-1.02 2.269-2.27V5.27c0-1.25-1.019-2.269-2.269-2.269zM9.5 16.25c0 .69-.56 1.25-1.25 1.25H5.75c-.69 0-1.25-.56-1.25-1.25v-3.5c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25v3.5zm0-8.5c0 .69-.56 1.25-1.25 1.25H5.75c-.69 0-1.25-.56-1.25-1.25v-1.5c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25v1.5zm10.5 7.5c0 1.38-1.12 2.5-2.5 2.5h-5c-1.38 0-2.5-1.12-2.5-2.5v-5c0-1.38 1.12-2.5 2.5-2.5h5c1.38 0 2.5 1.12 2.5 2.5v5z"/>
+  </svg>
+</a>
 </div>
       </div>
 
