@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             Kesehatan Keluarga <br /> <span className="text-blue-400">Dimulai dari Rumah</span>
           </h1>
           <p className="text-xl text-blue-100 max-w-lg leading-relaxed">
-            Mantri Home Care menyediakan jasa khitan modern tanpa nyeri dan perawatan luka profesional oleh tenaga medis berpengalaman, langsung ke tempat Anda.
+            Mantri Home Care menyediakan jasa khitan modern tanpa nyeri dan perawatan luka profesional oleh tenaga kesehatan berpengalaman, langsung ke tempat Anda.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a 

@@ -165,7 +165,7 @@ Lokasi Saya: ${googleMapsUrl}`;
                 <option value="khitan">Khitan Modern (Anak/Dewasa)</option>
                 <option value="luka">Perawatan Luka Diabetes</option>
                 <option value="luka_postop">Perawatan Luka Pasca Operasi</option>
-                <option value="medis_lain">Layanan Medis Lainnya</option>
+                <option value="medis_lain">Layanan Kesehatan Lainnya</option>
               </select>
             </div>
             <div>

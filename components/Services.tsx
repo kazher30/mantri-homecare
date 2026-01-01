@@ -48,7 +48,7 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Layanan Unggulan Kami</h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6">Solusi Kesehatan Medis Profesional Di Rumah Anda</h3>
+          <h3 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6">Solusi Layanan Kesehatan Profesional Di Rumah Anda</h3>
           <p className="text-gray-600 text-lg">
             Kami membawa kualitas klinik ke dalam kenyamanan rumah Anda. Ditangani oleh perawat profesional berlisensi dengan peralatan medis modern yang steril.
           </p>
