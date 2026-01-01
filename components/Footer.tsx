@@ -10,7 +10,15 @@ const Footer: React.FC = () => {
       <div>
         <div className="flex items-center mb-4">
           {/* Ganti dengan logo kamu kalau ada src */}
-          <div className="bg-white text-blue-900 rounded-full w-12 h-12 flex items-center justify-center text-3xl font-bold mr-3">+</div>
+          <div className="flex items-center mb-6">
+    <a href="#hero" className="flex items-center">
+      <img 
+        src="/logobulatMHC.png"  // atau /logo.svg kalau SVG
+        alt="Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
+        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
+      />
+    </a>
+  </div>
           <h3 className="text-2xl font-bold">MANTRI HOME CARE</h3>
         </div>
         <p className="text-gray-300">
