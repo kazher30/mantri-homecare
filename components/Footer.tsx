@@ -49,11 +49,11 @@ const Footer: React.FC = () => {
   </a>
 
   {/* Blogger */}
-<a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="bg-orange-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-700 transition">
+<a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
   <img 
         src="/Blogger-Logo-2016-present.png"  // atau /logo.svg kalau SVG
         alt="Blog Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-8 w-20 mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        className="h-10 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
   />
 </a>
 </div>
