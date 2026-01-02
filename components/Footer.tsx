@@ -49,11 +49,12 @@ const Footer: React.FC = () => {
   </a>
 
   {/* Blogger */}
-  {/* Blogger */}
 <a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="bg-orange-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-700 transition">
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M21.731 3.001H2.269C1.019 3.001 0 4.02 0 5.27v13.46c0 1.25 1.019 2.27 2.269 2.27h19.462c1.25 0 2.269-1.02 2.269-2.27V5.27c0-1.25-1.019-2.269-2.269-2.269zM9.5 16.25c0 .69-.56 1.25-1.25 1.25H5.75c-.69 0-1.25-.56-1.25-1.25v-3.5c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25v3.5zm0-8.5c0 .69-.56 1.25-1.25 1.25H5.75c-.69 0-1.25-.56-1.25-1.25v-1.5c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25v1.5zm10.5 7.5c0 1.38-1.12 2.5-2.5 2.5h-5c-1.38 0-2.5-1.12-2.5-2.5v-5c0-1.38 1.12-2.5 2.5-2.5h5c1.38 0 2.5 1.12 2.5 2.5v5z"/>
-  </svg>
+  <img 
+        src="/Blogger-Logo-2016-present.png"  // atau /logo.svg kalau SVG
+        alt="Blog Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
+        className="h-16 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+  />
 </a>
 </div>
       </div>
