@@ -11,8 +11,8 @@ const Services: React.FC = () => {
       icon: (
         <img 
         src="/SunatTop.png"  // atau /logo.svg kalau SVG
-        alt="Blog Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-10 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
+        className="h-6 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
         />
     
       ),
