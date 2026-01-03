@@ -9,11 +9,12 @@ const Services: React.FC = () => {
       features: ['Metode Super Ring', 'Metode Super Sealer', 'Metode Super Couter', 'Tanpa Jarum Suntik (Optional)', 'Kontrol Pasca Khitan Gratis'],
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan Khitan Modern (Super Ring/Sealer/Couter). Boleh konsultasi lebih lanjut?',
       icon: (
-        <img  
-            src="/SunatTop.png"
-            alt="Mantri Home Care - Spesialis Sunat Modern Kediri"
-            className="h-12 w-auto"
+        <img 
+        src="/Blogger-Logo-2016-present.png"  // atau /logo.svg kalau SVG
+        alt="Blog Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
+        className="h-10 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
         />
+    
       ),
       color: 'bg-blue-50'
     },
