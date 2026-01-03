@@ -10,7 +10,7 @@ const Services: React.FC = () => {
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan Khitan Modern (Super Ring/Sealer/Couter). Boleh konsultasi lebih lanjut?',
       icon: (
         <img 
-        src="/Blogger-Logo-2016-present.png"  // atau /logo.svg kalau SVG
+        src="/SunatTop.png"  // atau /logo.svg kalau SVG
         alt="Blog Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
         className="h-10 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
         />
