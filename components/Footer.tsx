@@ -66,17 +66,6 @@ const Footer: React.FC = () => {
   <li><a href="#hero" className="hover:text-gray-300 transition-colors">Beranda</a></li>
   <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Layanan Kami</a></li>
   <li><a href="#tips-kesehatan" className="hover:text-gray-300 transition-colors">Tips Kesehatan</a></li>
-  <li className="mt-6 pt-4 border-t border-blue-800">
-    <p className="font-semibold mb-2">Lokasi Praktek</p>
-    <a 
-      href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="block hover:text-gray-300 transition-colors"
-    >
-      Buka Google Maps (Ulasan & Direction)
-    </a>
-  </li>
   <li>
   <a 
     href="https://forms.gle/AHfTtxtUEkqvTrG36" 
@@ -89,7 +78,18 @@ const Footer: React.FC = () => {
     </svg>
     <span>Daftar / Antri Layanan</span>
   </a>
-</li>
+  </li>
+  <li className="mt-6 pt-4 border-t border-blue-800">
+    <p className="font-semibold mb-2">Lokasi Praktek</p>
+    <a 
+      href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block hover:text-gray-300 transition-colors"
+    >
+      Buka Google Maps (Ulasan & Direction)
+    </a>
+  </li>
 </ul>
       </div>
 
