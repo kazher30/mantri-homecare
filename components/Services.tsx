@@ -12,7 +12,7 @@ const Services: React.FC = () => {
         <img 
         src="/SunatTop2.png"  // atau /logo.svg kalau SVG
         alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-10 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        className="h-20 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
         />
     
       ),
