@@ -40,9 +40,11 @@ const Services: React.FC = () => {
       features: ['Pasang/Ganti Kateter', 'Home Visit Keperawatan', 'Cek Gula Darah & Kolesterol', 'Injeksi / Pemberian Vitamin'],
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan medis lainnya (kateter/cek lab/injeksi). Boleh info lebih lanjut?',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
+        <img 
+        src="/logostetoskop.png"  // atau /logo.svg kalau SVG
+        alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
+        className="h-20 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        />
       ),
       color: 'bg-purple-50'
     }
