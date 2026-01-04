@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
 
     {/* Baris Bawah: Copyright & Kebijakan */}
     <div className="border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
-      <p>&copy; 2025 Mantri Home Care. All rights reserved.</p>
+      <p>&copy; 2020 Mantri Home Care. All rights reserved.</p>
       <div className="space-x-6 mt-4 md:mt-0">
         <a href="/kebijakan-privasi" className="hover:text-gray-300 transition-colors">Kebijakan Privasi</a>
         <a href="/syarat-ketentuan" className="hover:text-gray-300 transition-colors">Syarat & Ketentuan</a>
