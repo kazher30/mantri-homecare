@@ -25,9 +25,11 @@ const Services: React.FC = () => {
       features: ['Luka Diabetes (Gangren)', 'Luka Pasca Operasi', 'Luka Kronis/Sulit Sembuh', 'Ganti Perban (Wound Dressing)'],
       waMessage: 'Halo Mantri Home Care, saya butuh layanan Perawatan Luka (diabetes/pasca operasi/kronis). Boleh dibantu konsultasi?',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.628.285a2 2 0 01-1.583 0l-.628-.285a6 6 0 00-3.86-.517l-2.387.477a2 2 0 00-1.022.547l-.34.34a2 2 0 000 2.828l1.245 1.245A9.754 9.754 0 014.605 21H19.395a9.754 9.754 0 01-1.24-1.245l1.245-1.245a2 2 0 000-2.828l-.34-.34zM12 7V3m0 0L9 6m3-3l3 3" />
-        </svg>
+        <img 
+        src="/logorawatluka.png"  // atau /logo.svg kalau SVG
+        alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
+        className="h-20 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        />
       ),
       color: 'bg-teal-50'
     },
