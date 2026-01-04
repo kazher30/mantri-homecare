@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
   const faqs: FAQItem[] = [
     {
       question: "Berapa perkiraan biaya khitan di Mantri Home Care?",
-      answer: "Biaya khitan kami sangat kompetitif dan bervariasi tergantung metode yang dipilih (Super Ring, Super Sealer, Super Counter, atau metode lainnya). Paket standar sudah termasuk tindakan, obat-obatan pasca-khitan, celana sunat, dan satu kali kontrol gratis. Untuk detail harga terbaru, silakan hubungi kami via WhatsApp."
+      answer: "Biaya khitan kami sangat kompetitif dan bervariasi tergantung metode yang dipilih (Super Ring, Super Sealer, Super Counter, atau metode lainnya). Paket standar sudah termasuk tindakan, obat-obatan pasca-khitan dan celana sunat. Untuk detail harga terbaru, silakan hubungi kami via WhatsApp."
     },
     {
       question: "Apa saja persiapan yang harus dilakukan sebelum anak dikhitan?",
@@ -20,7 +20,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Bagaimana cara merawat luka khitan agar cepat sembuh?",
-      answer: "Jagalah area luka tetap kering dan bersih selama 2-3 hari pertama. Gunakan celana sunat yang disediakan untuk mengurangi gesekan. Minum obat pereda nyeri dan antibiotik sesuai instruksi mantri, serta berikan makanan tinggi protein seperti telur atau ikan untuk mempercepat regenerasi jaringan."
+      answer: "Jagalah area luka tetap kering dan bersih selama 2-3 hari pertama. Gunakan celana sunat yang disediakan untuk mengurangi gesekan. Minum obat pereda nyeri jika diperlukan serta berikan makanan tinggi protein seperti telur atau ikan untuk mempercepat regenerasi jaringan."
     },
     {
       question: "Berapa lama durasi penyembuhan untuk perawatan luka diabetes?",
@@ -28,7 +28,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Apakah layanan Mantri Home Care tersedia di hari Sabtu, Minggu, atau hari libur?",
-      answer: "Ya, layanan kami tersedia setiap hari termasuk hari libur nasional (07.00 - 21.00). Namun, karena tingginya permintaan di akhir pekan, kami menyarankan Anda untuk melakukan pemesanan jadwal setidaknya 1-2 hari sebelumnya."
+      answer: "Ya, layanan kami tersedia setiap hari termasuk hari libur nasional. Namun, karena tingginya permintaan di akhir pekan, kami menyarankan Anda untuk melakukan pemesanan jadwal setidaknya 1-2 hari sebelumnya."
     }
   ];
 

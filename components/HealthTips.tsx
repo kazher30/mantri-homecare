@@ -93,11 +93,11 @@ const HealthTips: React.FC = () => {
           <>
             <h4 className="text-xl font-bold text-blue-800 mb-4">Tips Perawatan Pasca Khitan &amp; Sunat di Rumah</h4>
             <ul className="space-y-3 text-gray-700">
-              <li>✔ Jaga luka tetap bersih dan kering, ganti perban jika basah.</li>
-              <li>✔ Oleskan madu murni pada luka setelah mandi atau buang air kecil.</li>
+              <li>✔ Jaga luka tetap bersih dan kering.</li>
+              <li>✔ Oleskan gel atau spry pada luka setelah mandi atau buang air kecil.</li>
               <li>✔ Pakai celana longgar atau celana khitan agar tidak bergesek.</li>
-              <li>✔ Hindari berlari, naik sepeda, atau aktivitas mengangkang selama 3 minggu.</li>
-              <li>✔ Berikan makanan tinggi protein (telur, ikan, daging) untuk penyembuhan cepat.</li>
+              <li>✔ Hindari berlari, naik sepeda, atau aktivitas berlebihan lainnya selama 3 minggu.</li>
+              <li>✔ Berikan makanan tinggi protein (telur, ikan, daging) untuk mempercepat penyembuhan.</li>
               <li>✔ Minum obat penghilang nyeri sesuai resep dokter.</li>
               <li>✔ Segera ke dokter jika ada pendarahan banyak atau nyeri hebat.</li>
             </ul>
@@ -108,8 +108,8 @@ const HealthTips: React.FC = () => {
           <>
             <h4 className="text-xl font-bold text-blue-800 mb-4">Tips Perawatan Luka Diabetes di Rumah</h4>
             <ul className="space-y-3 text-gray-700">
-              <li>✔ Kontrol gula darah tetap stabil (makan teratur, minum obat).</li>
-              <li>✔ Cuci luka dengan air mengalir dan sabun lembut, jangan digosok.</li>
+              <li>✔ Kontrol gula darah tetap stabil (diet gula teratur, minum obat).</li>
+              <li>✔ Cuci luka dengan air air steril, jangan digosok.</li>
               <li>✔ Oleskan salep dari dokter, lalu tutup dengan kasa steril.</li>
               <li>✔ Ganti perban setiap hari atau jika basah.</li>
               <li>✔ Periksa kaki setiap hari dengan cermin (cari luka baru).</li>

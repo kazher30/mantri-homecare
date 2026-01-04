@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
   </a>
   </li>
   <li className="mt-6 pt-4 border-t border-blue-800">
-    <p className="font-semibold mb-2">Lokasi Praktek</p>
+    <p className="font-semibold mb-2">Lokasi Praktek & Ulasan</p>
     <a 
       href="https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8" 
       target="_blank" 

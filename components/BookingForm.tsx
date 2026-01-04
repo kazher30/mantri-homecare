@@ -96,7 +96,7 @@ Lokasi Saya: ${googleMapsUrl}`;
           
           <div className="mb-8 p-4 bg-blue-50 border border-blue-100 rounded-2xl">
             <p className="text-blue-800 text-sm font-medium">
-              <span className="font-bold">Info:</span> Klik pada peta atau geser pin biru ke lokasi rumah Anda untuk memudahkan tim medis kami menemukan alamat Anda.
+              <span className="font-bold">Info:</span> Klik pada peta atau geser pin biru ke lokasi rumah Anda untuk memudahkan tim medis kami menemukan alamat Anda. Atau aktifkan GPS di perangkat dan tekan tanda di pojok kanan bawah map.
             </p>
           </div>
 
