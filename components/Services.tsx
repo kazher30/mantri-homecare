@@ -12,7 +12,7 @@ const Services: React.FC = () => {
         <img 
         src="/sunattopBW.png"  // atau /logo.svg kalau SVG
         alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-12 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
         />
     
       ),
@@ -28,7 +28,7 @@ const Services: React.FC = () => {
         <img 
         src="/logorawatluka.png"  // atau /logo.svg kalau SVG
         alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-12 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
         />
       ),
       color: 'bg-teal-50'
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
         <img 
         src="/logostetoskop.png"  // atau /logo.svg kalau SVG
         alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-12 w-auto mr-2"  // ukuran logo di footer, sesuaikan kalau perlu
+        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
         />
       ),
       color: 'bg-purple-50'
