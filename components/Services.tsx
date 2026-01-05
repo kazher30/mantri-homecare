@@ -67,7 +67,7 @@ const Services: React.FC = () => {
               key={service.id} 
               className={`p-8 rounded-3xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-blue-100 ${service.color}`}
             >
-              <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6">
+              <div className="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6">
                 {service.icon}
               </div>
               <h4 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h4>
