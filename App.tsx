@@ -8,6 +8,8 @@ import FAQ from './components/FAQ';
 import BookingForm from './components/BookingForm';
 import Footer from './components/Footer';
 
+import { Analytics } from '@vercel/analytics/react';
+
 const App: React.FC = () => {
   return (
   <div className="min-h-screen relative">  {/* tambah relative biar fixed bekerja */}
@@ -34,6 +36,8 @@ const App: React.FC = () => {
     />
   </a>
 </div>
+
+<Analytics />
   </div>
 );
 };
