@@ -13,9 +13,10 @@ return (
               <img 
                 src="/logobulatMHC.png"
                 alt="Mantri Home Care Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-                className="h-16 w-auto mr-2"
+                className="h-14 w-auto mr-2"
               />
             </a>
+            <h4 className="font-bold text-xl mb-6">Mantri Home Care</h4>
           </div>
           <p className="text-gray-300 leading-relaxed">
             Membawa kenyamanan rumah ke dalam layanan kesehatan medis profesional. Fokus kami adalah kesehatan dan pemulihan pasien secara menyeluruh dengan sentuhan personal.
