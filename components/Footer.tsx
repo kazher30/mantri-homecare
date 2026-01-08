@@ -75,7 +75,7 @@ return (
 
         {/* KOLOM BARU 4: Layanan Lain (Link Google Maps baru) */}
         <div>
-          <h4 className="font-bold text-xl mb-6">Layanan Lain</h4>
+          <h4 className="font-bold text-xl mb-6">Jasa Layanan Lain</h4>
           <ul className="space-y-4">
             <li>
               <a 
