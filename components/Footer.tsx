@@ -5,12 +5,12 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-900 text-white py-12">
   <div className="max-w-6xl mx-auto px-4">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-      {/* Kolom Kiri: Logo & Deskripsi */}
-      <div>
-        <div className="flex items-center mb-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12"> {/* menjadi 4 kolom */}
+      {/* Kolom Satu: Logo & Deskripsi */}
+    <div>
+    <div className="flex items-center mb-4">
           {/* Ganti dengan logo kamu kalau ada src */}
-          <div className="flex items-center mb-6">
+    <div className="flex items-center mb-6">
     <a href="#hero" className="flex items-center">
       <img 
         src="/logobulatMHC.png"  // atau /logo.svg kalau SVG
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
 </div>
       </div>
 
-      {/* Kolom Tengah: Tautan Cepat + Lokasi (digabung) */}
+      {/* Kolom Dua: Tautan Cepat + Lokasi (digabung) */}
       <div>
         <h4 className="font-bold text-xl mb-6">Tautan Cepat</h4>
         <ul className="space-y-4">
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
 </ul>
       </div>
 
-      {/* Kolom Kanan: Layanan Utama - fix scroll ke section layanan */}
+      {/* Kolom Tiga: Layanan Utama - fix scroll ke section layanan */}
       <div>
         <h4 className="font-bold text-xl mb-6">Layanan Utama</h4>
         <ul className="space-y-4">
@@ -103,6 +103,27 @@ const Footer: React.FC = () => {
           <li><a href="#layanan" className="hover:text-gray-300 transition-colors">Home Visit Medis</a></li>
         </ul>
       </div>
+
+      {/* KOLOM BARU 4: Layanan Lain (Link Google Maps baru) */}
+        <div>
+          <h4 className="font-bold text-xl mb-6">Layanan Lain</h4>
+          <ul className="space-y-4">
+            <li>
+              <a 
+                href="https://maps.app.goo.gl/iUZ3vuuSrtJXeJs8A" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-gray-300 transition-colors flex items-center space-x-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Lokasi Layanan Lain</span>
+              </a>
+            </li>
+          </ul>
+        </div>
     </div>
 
     {/* Baris Bawah: Copyright & Kebijakan */}
