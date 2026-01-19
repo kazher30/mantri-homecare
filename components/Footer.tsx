@@ -48,9 +48,11 @@ return (
 
   {/* Blogger */}
   <a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="bg-orange-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-700 transition">
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M15.58 16.84c-.42.45-1.14.64-2.32.64-1.98 0-3.6-1.06-3.6-3.52 0-2.46 1.62-3.52 3.6-3.52.78 0 1.46.17 1.88.42v-2.02c-.62-.28-1.4-.48-2.34-.48-3.3 0-6 1.68-6 5.48 0 3.8 2.7 5.48 6 5.48 1.86 0 2.88-.56 3.78-1.3v-1.18zm-6.58-5.34c-.9 0-1.62.36-1.62 1.26s.72 1.26 1.62 1.26 1.62-.36 1.62-1.26-.72-1.26-1.62-1.26zm11-7.5v14c0 2.76-2.24 5-5 5h-14c-2.76 0-5-2.24-5-5v-14c0-2.76 2.24-5 5-5h14c2.76 0 5 2.24 5 5zm-4 10h-3v-6h-4v6h-3v-11h10v11z"/>
-    </svg>
+    <img 
+        src="/Blogger-Logo-2016-present.png"
+        alt="Mantri Home Care Blogger - Spesialis Rawat Luka & Sunat Modern Kediri"
+        className="h-14 w-auto mr-2"
+    />
   </a>
           </div>
         </div>
