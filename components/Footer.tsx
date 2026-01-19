@@ -47,7 +47,7 @@ return (
             </a>
 
             {/* Blogger */}
-            <a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-auto justify-center">
+            <a href="https://mantrihomecare.blogspot.com" target="_blank" rel="noopener noreferrer" className="w-auto h-10 flex items-auto justify-center">
               <img 
                   src="/Blogger-Logo-2016-present.png"
                   alt="Mantri Home Care Blogger - Spesialis Rawat Luka & Sunat Modern Kediri"
