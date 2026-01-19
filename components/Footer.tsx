@@ -16,7 +16,7 @@ return (
                   className="h-14 w-auto mr-2"
                 />
               </a>
-              <h4 className="text-5xl font-bold text-xl mb-10">Mantri Home Care</h4>
+              <h3 className="text-5xl font-bold text-xl mb-10">Mantri Home Care</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Membawa kenyamanan rumah ke dalam layanan kesehatan medis profesional. Fokus kami adalah kesehatan dan pemulihan pasien secara menyeluruh dengan sentuhan personal.
