@@ -51,7 +51,7 @@ return (
     <img 
         src="/Blogger-Logo-2016-present.png"
         alt="Mantri Home Care Blogger - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-14 w-auto mr-2"
+        className="h-10 w-auto mr-2"
     />
   </a>
           </div>
