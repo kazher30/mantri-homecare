@@ -7,7 +7,6 @@ return (
     <div className="max-w-6xl mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">  {/* UBAH jadi 5 kolom */}
         {/* Kolom 1: Logo & Deskripsi pakai 2 kolom*/}
-        <div>
           <div className="md:col-span-2">
             <div className="flex items-center mb-6">
               <a href="#hero" className="flex items-center">
@@ -57,7 +56,6 @@ return (
               </a>
             </div>
           </div>
-        </div>
 
         {/* Kolom 2: Tautan Cepat + Lokasi + Form */}
         <div>
