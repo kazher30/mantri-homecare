@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
@@ -6,7 +5,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
 export const getHealthTips = async (category: string) => {
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-flash-preview",
+      model: "gemini-2.0-flash-exp",  
       contents: `Berikan 3 tips kesehatan profesional yang singkat dan padat mengenai: ${category}. Gunakan Bahasa Indonesia yang sopan dan mudah dimengerti.`,
       config: {
         responseMimeType: "application/json",
