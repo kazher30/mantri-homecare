@@ -19,6 +19,7 @@ const App: React.FC = () => {
     "description": "Layanan rawat luka diabetes, pasca operasi, dan sunat modern di Kediri. Home care profesional panggilan ke rumah. Konsultasi gratis.",
     "url": "https://mantri-homecare.vercel.app",
     "telephone": "+6285736360363",
+    
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Kediri",
