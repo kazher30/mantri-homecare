@@ -16,7 +16,7 @@ const App: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Mantri Home Care Kediri",
-    "description": "Jasa khitan modern tanpa nyeri dan rawat luka profesional (diabetes, pasca operasi, gangren) di Kediri. Layanan home care panggilan ke rumah oleh tenaga kesehatan berlisensi.",
+    "description": "Layanan rawat luka diabetes, pasca operasi, dan sunat modern di Kediri. Home care profesional panggilan ke rumah. Konsultasi gratis.",
     "url": "https://mantri-homecare.vercel.app",
     "telephone": "+6285736360363",
     "address": {
