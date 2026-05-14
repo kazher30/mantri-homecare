@@ -36,42 +36,84 @@ const FAQ: React.FC = () => {
   };
 
   return (
-<section id="faq" className="py-24 relative overflow-hidden">
-  
-  {/* Background Image */}
-  <div 
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-    style={{
-      backgroundImage: `url('/faq-background.png')`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-    }}
-  />
+    <section id="faq" className="py-24 relative overflow-hidden">
+      
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        style={{
+          backgroundImage: `url('/faq-background.png')`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+      />
 
-  {/* Gradasi yang lebih ringan */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/75 to-black/85 z-10"></div>
+      {/* Gradasi Gelap */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/80 to-black/90 z-10"></div>
 
-  {/* Content */}
-  <div className="container mx-auto px-6 relative z-20">
-    <div className="max-w-3xl mx-auto">
-      <div className="text-center mb-16">
-        <h2 className="text-white font-bold tracking-widest uppercase text-sm mb-4">FAQ</h2>
-        <h3 className="text-4xl font-extrabold text-white mb-4">Pertanyaan Populer</h3>
-        <p className="text-gray-200">Temukan jawaban cepat untuk pertanyaan yang sering diajukan mengenai layanan kami.</p>
+      {/* Content */}
+      <div className="container mx-auto px-6 relative z-20">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-white font-bold tracking-widest uppercase text-sm mb-4">FAQ</h2>
+            <h3 className="text-4xl font-extrabold text-white mb-4">Pertanyaan Populer</h3>
+            <p className="text-gray-200">Temukan jawaban cepat untuk pertanyaan yang sering diajukan mengenai layanan kami.</p>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div 
+                key={index} 
+                className={`border border-white/20 rounded-2xl overflow-hidden transition-all duration-300 backdrop-blur-md ${
+                  openIndex === index 
+                    ? 'bg-white/10 border-white/30 shadow-xl' 
+                    : 'bg-white/5 hover:bg-white/10'
+                }`}
+              >
+                <button 
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none"
+                >
+                  <span className={`text-lg font-bold transition-colors ${
+                    openIndex === index ? 'text-white' : 'text-gray-100'
+                  }`}>
+                    {faq.question}
+                  </span>
+                  <div className={`flex-shrink-0 ml-4 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${openIndex === index ? 'text-white' : 'text-gray-300'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </button>
+                
+                <div 
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="px-8 pb-6 text-gray-200 leading-relaxed border-t border-white/10 pt-4">
+                    {faq.answer}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-gray-300 mb-6">Pertanyaan Anda tidak ada di sini?</p>
+            <a 
+              href="#contact" 
+              className="inline-flex items-center text-white font-bold hover:text-blue-200 transition-colors group"
+            >
+              Hubungi Tim Medis Kami Sekarang
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-
-      {/* FAQ Items tetap sama */}
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          // ... kode FAQ item kamu tetap sama
-        ))}
-      </div>
-
-      {/* ... bagian bawah tetap sama */}
-
-    </div>
-  </div>
-</section>
+    </section>
   );
 };
 
