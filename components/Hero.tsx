@@ -20,6 +20,21 @@ const Hero: React.FC = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-blue-900">
+      {/* Tambahkan style untuk animasi goyang */}
+      <style>{`
+        @keyframes gentleShake {
+          0% { transform: translate(0px, 0px) rotate(0deg); }
+          20% { transform: translate(-2px, 1px) rotate(-1deg); }
+          40% { transform: translate(2px, -1px) rotate(1deg); }
+          60% { transform: translate(-1px, 2px) rotate(0.5deg); }
+          80% { transform: translate(1px, -1px) rotate(-0.5deg); }
+          100% { transform: translate(0px, 0px) rotate(0deg); }
+        }
+        .hover-goyang:hover {
+          animation: gentleShake 0.5s ease-in-out 0s 2;
+        }
+      `}</style>
+
       <div className="absolute inset-0 z-0">
         <img 
           src="https://picsum.photos/seed/medical/1920/1080" 
@@ -94,7 +109,7 @@ const Hero: React.FC = () => {
             <img 
               src="/hero mantri.png" 
               alt="Professional Nurse" 
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover transition-all duration-300 hover-goyang"
             />
           </div>
         </div>
@@ -126,7 +141,7 @@ const Hero: React.FC = () => {
               ))}
             </div>
 
-            {/* Tombol Link ke Google Maps - DIPERJELAS */}
+            {/* Tombol Link ke Google Maps */}
             <div className="p-6 border-t text-center bg-gray-50">
               <p className="text-gray-500 mb-4">Masih ada ratusan testimoni lainnya dari pasien kami</p>
               <button
