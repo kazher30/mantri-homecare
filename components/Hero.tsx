@@ -6,28 +6,28 @@ const Hero: React.FC = () => {
   // Daftar Review - Ganti nama file sesuai yang kamu simpan di folder public
   const reviews = [
     { 
-      img: "/review1.png", 
-      name: "Bpk. Ahmad Santoso", 
+      img: "/review1.jpeg", 
+      name: "Ibu Lita Putri", 
       text: "Khitan anak saya sangat nyaman, tidak menangis sama sekali. Pelayanan cepat dan profesional." 
     },
     { 
-      img: "/review2.png", 
-      name: "Ibu Siti Rahayu", 
+      img: "/review2.jpeg", 
+      name: "Ibu Serira", 
       text: "Luka diabetes ayah saya sembuh dengan cepat. Terima kasih Mantri Home Care!" 
     },
     { 
-      img: "/review3.png", 
-      name: "Mas Budi Pratama", 
+      img: "/review3.jpeg", 
+      name: "Mas Leonel", 
       text: "Pelayanan home visit sangat memuaskan. Perawatnya ramah dan telaten." 
     },
     { 
-      img: "/review4.png", 
-      name: "Keluarga Hadi", 
+      img: "/review4.jpeg", 
+      name: "Ibu Siska", 
       text: "Rekomendasi untuk khitan modern. Hasilnya rapi dan cepat sembuh." 
     },
     { 
-      img: "/review5.png", 
-      name: "Ibu Rina Wijaya", 
+      img: "/review5.jpeg", 
+      name: "Ibu Sulis", 
       text: "Sangat puas dengan perawatan lukanya. Timnya responsif dan kompeten." 
     },
   ];
