@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import L from 'leaflet';
 
@@ -8,7 +7,7 @@ const BookingForm: React.FC = () => {
     phone: '',
     service: 'khitan',
     message: '',
-    lat: -7.93079, // Default Kediri
+    lat: -7.93079,
     lng: 112.02463
   });
 
@@ -18,14 +17,12 @@ const BookingForm: React.FC = () => {
 
   useEffect(() => {
     if (mapRef.current && !leafletMap.current) {
-      // Initialize Map
       leafletMap.current = L.map(mapRef.current).setView([formData.lat, formData.lng], 11);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(leafletMap.current);
 
-      // Add Service Area Circle
       L.circle([-7.93079, 112.02463], {
         color: '#3b82f6',
         fillColor: '#3b82f6',
@@ -33,7 +30,6 @@ const BookingForm: React.FC = () => {
         radius: 35000 
       }).addTo(leafletMap.current).bindPopup('Area Layanan Utama MANTRI HOME CARE');
 
-      // Marker for user selection
       markerRef.current = L.marker([formData.lat, formData.lng], {
         draggable: true
       }).addTo(leafletMap.current);
@@ -88,20 +84,35 @@ Lokasi Saya: ${googleMapsUrl}`;
   };
 
   return (
-    <section id="contact" className="py-24 bg-white relative overflow-hidden scroll-mt-20">
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+    <section id="contact" className="py-24 relative overflow-hidden scroll-mt-20">
+      
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        style={{
+          backgroundImage: `url('/bookingform-background.png')`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+      />
+
+      {/* Gradasi Biru Brand + Opacity */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-800/75 to-blue-950/85 z-10"></div>
+
+      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start relative z-20">
+        
         <div className="lg:sticky lg:top-32">
-          <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Pesan Layanan</h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-8 leading-tight">Tentukan Lokasi & Jadwal Kunjungan</h3>
+          <h2 className="text-white font-bold tracking-widest uppercase text-sm mb-4">Pesan Layanan</h2>
+          <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-8 leading-tight">Tentukan Lokasi & Jadwal Kunjungan</h3>
           
-          <div className="mb-8 p-4 bg-blue-50 border border-blue-100 rounded-2xl">
-            <p className="text-blue-800 text-sm font-medium">
-              <span className="font-bold">Info:</span> Klik pada peta atau geser pin biru ke lokasi rumah Anda untuk memudahkan tim medis kami menemukan alamat Anda. Atau aktifkan GPS di perangkat dan tekan tanda di pojok kanan bawah map.
+          <div className="mb-8 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl">
+            <p className="text-white text-sm font-medium">
+              <span className="font-bold">Info:</span> Klik pada peta atau geser pin biru ke lokasi rumah Anda untuk memudahkan tim medis kami menemukan alamat Anda.
             </p>
           </div>
 
           <div className="space-y-6">
-            <div className="h-[400px] w-full relative rounded-3xl overflow-hidden shadow-inner border border-gray-200">
+            <div className="h-[400px] w-full relative rounded-3xl overflow-hidden shadow-inner border border-white/20">
               <div ref={mapRef} className="h-full w-full"></div>
               <button 
                 type="button"
@@ -117,20 +128,19 @@ Lokasi Saya: ${googleMapsUrl}`;
             </div>
             
             <div className="grid grid-cols-2 gap-4">
-               <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
-                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Latitude</p>
-                  <p className="text-sm font-mono text-gray-700">{formData.lat.toFixed(6)}</p>
+               <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+                  <p className="text-xs font-bold text-white/70 uppercase mb-1">Latitude</p>
+                  <p className="text-sm font-mono text-white">{formData.lat.toFixed(6)}</p>
                </div>
-               <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
-                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Longitude</p>
-                  <p className="text-sm font-mono text-gray-700">{formData.lng.toFixed(6)}</p>
+               <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+                  <p className="text-xs font-bold text-white/70 uppercase mb-1">Longitude</p>
+                  <p className="text-sm font-mono text-white">{formData.lng.toFixed(6)}</p>
                </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-gray-50 p-8 md:p-12 rounded-[2.5rem] border border-gray-100 shadow-xl relative">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10 translate-x-10 -translate-y-10"></div>
+        <div className="bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-[2.5rem] border border-white/30 shadow-2xl relative">
           <h4 className="text-2xl font-bold text-blue-900 mb-8">Formulir Pemesanan</h4>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
