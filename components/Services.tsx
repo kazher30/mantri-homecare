@@ -10,11 +10,10 @@ const Services: React.FC = () => {
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan Khitan Modern (Super Ring/Sealer/Couter). Boleh konsultasi lebih lanjut?',
       icon: (
         <img 
-        src="/SunatTop2.png"  // atau /logo.svg kalau SVG
-        alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
+          src="/layanan-sunat.png" 
+          alt="Jasa Khitan Modern - Mantri Home Care Kediri"
+          className="h-20 w-auto object-contain"
         />
-    
       ),
       color: 'bg-blue-50'
     },
@@ -26,9 +25,9 @@ const Services: React.FC = () => {
       waMessage: 'Halo Mantri Home Care, saya butuh layanan Perawatan Luka (diabetes/pasca operasi/kronis). Boleh dibantu konsultasi?',
       icon: (
         <img 
-        src="/logorawatluka.png"  // atau /logo.svg kalau SVG
-        alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
+          src="/logorawatluka.png" 
+          alt="Perawatan Luka Home Care"
+          className="h-16 w-auto object-contain"
         />
       ),
       color: 'bg-teal-50'
@@ -41,9 +40,9 @@ const Services: React.FC = () => {
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan medis lainnya (kateter/cek lab/injeksi). Boleh info lebih lanjut?',
       icon: (
         <img 
-        src="/logostetoskop.png"  // atau /logo.svg kalau SVG
-        alt="Sunat Top Logo - Spesialis Rawat Luka & Sunat Modern Kediri"
-        className="h-16 w-auto mr-4"  // ukuran logo di footer, sesuaikan kalau perlu
+          src="/logostetoskop.png" 
+          alt="Layanan Kesehatan Lainnya"
+          className="h-16 w-auto object-contain"
         />
       ),
       color: 'bg-purple-50'
@@ -51,7 +50,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="layanan" className="py-24 bg-white">  {/* 3 kartu layanan */}
+    <section id="layanan" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Layanan Unggulan Kami</h2>
@@ -67,7 +66,7 @@ const Services: React.FC = () => {
               key={service.id} 
               className={`p-8 rounded-3xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-blue-100 ${service.color}`}
             >
-              <div className="w-18 h-18 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6">
+              <div className="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 p-2">
                 {service.icon}
               </div>
               <h4 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h4>
