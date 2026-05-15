@@ -12,7 +12,7 @@ const Services: React.FC = () => {
         <img 
           src="/layanan-sunat.png" 
           alt="Jasa Khitan Modern - Mantri Home Care Kediri"
-          className="h-32 w-full object-contain"
+          className="h-32 w-full object-contain"   // Diperbesar
         />
       ),
       color: 'bg-blue-50'
@@ -27,7 +27,7 @@ const Services: React.FC = () => {
         <img 
           src="/logorawatluka.png" 
           alt="Perawatan Luka Home Care"
-          className="h-16 w-auto object-contain"
+          className="h-24 w-full object-contain"
         />
       ),
       color: 'bg-teal-50'
@@ -42,7 +42,7 @@ const Services: React.FC = () => {
         <img 
           src="/logostetoskop.png" 
           alt="Layanan Kesehatan Lainnya"
-          className="h-16 w-auto object-contain"
+          className="h-24 w-full object-contain"
         />
       ),
       color: 'bg-purple-50'
@@ -66,13 +66,15 @@ const Services: React.FC = () => {
               key={service.id} 
               className={`p-8 rounded-3xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-blue-100 ${service.color}`}
             >
-              <div className="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 p-2">
+              {/* Container Icon yang lebih besar */}
+              <div className="w-full h-40 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 p-4 border border-gray-100">
                 {service.icon}
               </div>
+
               <h4 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h4>
               <p className="text-gray-600 mb-8 leading-relaxed">{service.description}</p>
               
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-10">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-gray-700 font-medium">
                     <svg className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
