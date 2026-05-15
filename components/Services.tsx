@@ -25,9 +25,9 @@ const Services: React.FC = () => {
       waMessage: 'Halo Mantri Home Care, saya butuh layanan Perawatan Luka (diabetes/pasca operasi/kronis). Boleh dibantu konsultasi?',
       icon: (
         <img 
-          src="/logorawatluka.png" 
+          src="/rawat-luka.png" 
           alt="Perawatan Luka Home Care"
-          className="h-24 w-full object-contain"
+          className="h-full w-full object-contain"
         />
       ),
       color: 'bg-teal-50'
@@ -40,9 +40,9 @@ const Services: React.FC = () => {
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan medis lainnya (kateter/cek lab/injeksi). Boleh info lebih lanjut?',
       icon: (
         <img 
-          src="/logostetoskop.png" 
+          src="/kesehatan-lain.png" 
           alt="Layanan Kesehatan Lainnya"
-          className="h-24 w-full object-contain"
+          className="h-full w-full object-contain"
         />
       ),
       color: 'bg-purple-50'
