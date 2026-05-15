@@ -12,10 +12,10 @@ const Services: React.FC = () => {
         <img 
           src="/layanan-sunat.png" 
           alt="Jasa Khitan Modern - Mantri Home Care Kediri"
-          className="h-full w-full object-contain"   // Diperbesar
+          className="h-full w-full object-contain"   
         />
       ),
-      color: 'bg-blue-50'
+      color: 'bg-white/10'
     },
     {
       id: 'luka',
@@ -30,7 +30,7 @@ const Services: React.FC = () => {
           className="h-full w-full object-contain"
         />
       ),
-      color: 'bg-teal-50'
+      color: 'bg-white/10'
     },
     {
       id: 'lainnya',
@@ -45,17 +45,31 @@ const Services: React.FC = () => {
           className="h-full w-full object-contain"
         />
       ),
-      color: 'bg-purple-50'
+      color: 'bg-white/10'
     }
   ];
 
   return (
-    <section id="layanan" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="layanan" className="py-24 relative overflow-hidden">
+      
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        style={{
+          backgroundImage: `url('/background-services.png')`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+      />
+
+      {/* Gradasi Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/75 to-black/80 z-10"></div>
+
+      <div className="container mx-auto px-6 relative z-20">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Layanan Unggulan Kami</h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6">Solusi Layanan Kesehatan Profesional Di Rumah Anda</h3>
-          <p className="text-gray-600 text-lg">
+          <h2 className="text-white font-bold tracking-widest uppercase text-sm mb-4">Layanan Unggulan Kami</h2>
+          <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Solusi Layanan Kesehatan Profesional Di Rumah Anda</h3>
+          <p className="text-gray-200 text-lg">
             Kami membawa kualitas klinik ke dalam kenyamanan rumah Anda. Ditangani oleh tenaga kesehatan profesional berlisensi dengan peralatan medis modern yang steril.
           </p>
         </div>
@@ -64,20 +78,20 @@ const Services: React.FC = () => {
           {services.map((service) => (
             <div 
               key={service.id} 
-              className={`p-8 rounded-3xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-blue-100 ${service.color}`}
+              className={`p-8 rounded-3xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-white/20 backdrop-blur-md ${service.color}`}
             >
-              {/* Container Icon yang lebih besar */}
+              {/* Container Icon */}
               <div className="w-full h-40 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 p-4 border border-gray-100">
                 {service.icon}
               </div>
 
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h4>
-              <p className="text-gray-600 mb-8 leading-relaxed">{service.description}</p>
+              <h4 className="text-2xl font-bold text-white mb-4">{service.title}</h4>
+              <p className="text-gray-200 mb-8 leading-relaxed">{service.description}</p>
               
               <ul className="space-y-3 mb-10">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center text-gray-700 font-medium">
-                    <svg className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <li key={idx} className="flex items-center text-gray-100 font-medium">
+                    <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                     {feature}
@@ -89,7 +103,7 @@ const Services: React.FC = () => {
                 href={`https://wa.me/6285736360363?text=${encodeURIComponent(service.waMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-10 w-full py-4 bg-blue-700 text-white rounded-full font-bold hover:bg-blue-800 block text-center transition"
+                className="mt-10 w-full py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-bold block text-center transition"
               >
                 Pesan Layanan
               </a>
