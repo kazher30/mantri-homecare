@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-blue-900">
-      {/* Tambahkan style untuk animasi goyang */}
+      {/* Style untuk animasi goyang */}
       <style>{`
         @keyframes gentleShake {
           0% { transform: translate(0px, 0px) rotate(0deg); }
@@ -35,6 +35,7 @@ const Hero: React.FC = () => {
         }
       `}</style>
 
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
           src="https://picsum.photos/seed/medical/1920/1080" 
@@ -73,7 +74,7 @@ const Hero: React.FC = () => {
             </a>
           </div>
 
-          {/* Testimoni Clickable */}
+          {/* Testimoni Clickable - Buka Modal */}
           <div 
             onClick={() => setShowReviews(true)}
             className="flex items-center space-x-6 pt-4 cursor-pointer hover:opacity-90 transition-all group"
@@ -104,6 +105,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
+        {/* Gambar Hero dengan efek goyang */}
         <div className="hidden md:block relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
@@ -115,10 +117,13 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Modal Review - Hanya Gambar Screenshot */}
+      {/* MODAL REVIEW - Dengan tombol yang selalu terlihat */}
       {showReviews && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-hidden">
+          {/* Modal container: flex column, tinggi maks 85vh */}
+          <div className="bg-white rounded-3xl w-full max-w-5xl max-h-[85vh] flex flex-col overflow-hidden">
+            
+            {/* Header sticky */}
             <div className="p-6 border-b flex justify-between items-center sticky top-0 bg-white z-10">
               <h3 className="text-2xl font-bold text-blue-900">Apa Kata Pasien Kami</h3>
               <button 
@@ -128,8 +133,9 @@ const Hero: React.FC = () => {
                 ×
               </button>
             </div>
-            
-            <div className="p-6 grid md:grid-cols-2 gap-6 overflow-y-auto max-h-[65vh]">
+
+            {/* Area gambar review - scrollable */}
+            <div className="p-6 grid md:grid-cols-2 gap-6 overflow-y-auto flex-1">
               {reviewImages.map((img, index) => (
                 <div key={index} className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
                   <img 
@@ -141,8 +147,8 @@ const Hero: React.FC = () => {
               ))}
             </div>
 
-            {/* Tombol Link ke Google Maps */}
-            <div className="p-6 border-t text-center bg-gray-50">
+            {/* Footer dengan tombol - selalu terlihat di bawah */}
+            <div className="p-6 border-t text-center bg-gray-50 flex-shrink-0">
               <p className="text-gray-500 mb-4">Masih ada ratusan testimoni lainnya dari pasien kami</p>
               <button
                 onClick={handleMoreReviewsClick}
