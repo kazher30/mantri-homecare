@@ -114,7 +114,7 @@ const Hero: React.FC = () => {
               </button>
             </div>
             
-            <div className="p-6 grid md:grid-cols-2 gap-6 overflow-y-auto max-h-[75vh]">
+            <div className="p-6 grid md:grid-cols-2 gap-6 overflow-y-auto max-h-[65vh]">
               {reviewImages.map((img, index) => (
                 <div key={index} className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
                   <img 
@@ -126,17 +126,20 @@ const Hero: React.FC = () => {
               ))}
             </div>
 
+            {/* Tombol Link ke Google Maps - DIPERJELAS */}
             <div className="p-6 border-t text-center bg-gray-50">
-              <p className="text-gray-500 mb-3">Masih ada ratusan testimoni lainnya dari pasien kami</p>
-              {/* Tombol Link ke Google Maps - tambahan sesuai permintaan */}
+              <p className="text-gray-500 mb-4">Masih ada ratusan testimoni lainnya dari pasien kami</p>
               <button
                 onClick={handleMoreReviewsClick}
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-all"
+                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-all shadow-md hover:shadow-lg"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
-                Lihat Ulasan Lainnya di Google Maps
+                Lihat Semua Ulasan di Google Maps
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
               </button>
             </div>
           </div>
