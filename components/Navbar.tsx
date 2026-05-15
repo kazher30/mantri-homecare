@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
             />
           </a>
           <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
-            MANTRI HOME CARE
+            MANTRI HOME CARE KEDIRI
           </span>
         </div>
         
