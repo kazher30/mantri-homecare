@@ -6,7 +6,7 @@ const Services: React.FC = () => {
       id: 'khitan',
       title: 'Jasa Khitan Modern',
       description: 'Khitan modern anak & dewasa dengan metode minim nyeri, tanpa jarum suntik, tanpa jahitan, tanpa perban, penyembuhan cepat, dan tidak ada pantangan khusus.',
-      features: ['Metode Super Ring', 'Metode Super Sealer', 'Metode Super Couter', 'Tanpa Jarum Suntik (Optional)', 'Kontrol Pasca Khitan Gratis'],
+      features: ['Aneka Metode Khitan Sesuai Kebutuhan', 'Tanpa Jarum Suntik (Optional)', 'Kontrol Pasca Khitan Gratis'],
       waMessage: 'Halo Mantri Home Care, saya tertarik dengan layanan Khitan Modern (Super Ring/Sealer/Couter). Boleh konsultasi lebih lanjut?',
       icon: (
         <img 
