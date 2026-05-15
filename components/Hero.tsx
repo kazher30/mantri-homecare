@@ -3,33 +3,14 @@ import React, { useState } from 'react';
 const Hero: React.FC = () => {
   const [showReviews, setShowReviews] = useState(false);
 
-  // Daftar Review - Ganti nama file sesuai yang kamu simpan di folder public
-  const reviews = [
-    { 
-      img: "/review1.jpeg", 
-      name: "Ibu Lita Putri", 
-      text: "Khitan anak saya sangat nyaman, tidak menangis sama sekali. Pelayanan cepat dan profesional." 
-    },
-    { 
-      img: "/review2.jpeg", 
-      name: "Ibu Serira", 
-      text: "Luka diabetes ayah saya sembuh dengan cepat. Terima kasih Mantri Home Care!" 
-    },
-    { 
-      img: "/review3.jpeg", 
-      name: "Mas Leonel", 
-      text: "Pelayanan home visit sangat memuaskan. Perawatnya ramah dan telaten." 
-    },
-    { 
-      img: "/review4.jpeg", 
-      name: "Ibu Siska", 
-      text: "Rekomendasi untuk khitan modern. Hasilnya rapi dan cepat sembuh." 
-    },
-    { 
-      img: "/review5.jpeg", 
-      name: "Ibu Sulis", 
-      text: "Sangat puas dengan perawatan lukanya. Timnya responsif dan kompeten." 
-    },
+  // Daftar Screenshot Review (sesuaikan nama file sesuai yang kamu simpan di folder public)
+  const reviewImages = [
+    "/review1.jpeg",
+    "/review2.jpeg",
+    "/review3.jpeg",
+    "/review4.jpeg",
+    "/review5.jpeg",
+    "/review6.jpeg",
   ];
 
   return (
@@ -72,7 +53,7 @@ const Hero: React.FC = () => {
             </a>
           </div>
 
-          {/* Testimoni Clickable - 1000+ Pasien Puas */}
+          {/* Testimoni Clickable */}
           <div 
             onClick={() => setShowReviews(true)}
             className="flex items-center space-x-6 pt-4 cursor-pointer hover:opacity-90 transition-all group"
@@ -98,12 +79,11 @@ const Hero: React.FC = () => {
               <p className="text-blue-200 text-sm font-medium group-hover:text-white transition-colors">
                 1000+ Pasien Puas ★★★★★
               </p>
-              <p className="text-blue-300 text-xs">Klik untuk melihat review asli</p>
+              <p className="text-blue-300 text-xs">Klik untuk melihat review</p>
             </div>
           </div>
         </div>
 
-        {/* Right Side Image */}
         <div className="hidden md:block relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
@@ -115,7 +95,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Modal Review */}
+      {/* Modal Review - Hanya Gambar Screenshot */}
       {showReviews && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-hidden">
@@ -129,28 +109,20 @@ const Hero: React.FC = () => {
               </button>
             </div>
             
-            <div className="p-6 grid md:grid-cols-2 gap-6 overflow-y-auto max-h-[70vh]">
-              {reviews.map((review, index) => (
-                <div key={index} className="bg-gray-50 rounded-2xl p-5">
+            <div className="p-6 grid md:grid-cols-2 gap-6 overflow-y-auto max-h-[75vh]">
+              {reviewImages.map((img, index) => (
+                <div key={index} className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
                   <img 
-                    src={review.img} 
-                    alt={`Review ${index+1}`}
-                    className="w-full h-56 object-cover rounded-xl mb-4"
+                    src={img} 
+                    alt={`Review ${index + 1}`}
+                    className="w-full h-auto object-contain"
                   />
-                  <p className="font-semibold text-blue-900">{review.name}</p>
-                  <p className="text-gray-600 mt-2 leading-relaxed">"{review.text}"</p>
                 </div>
               ))}
             </div>
 
             <div className="p-6 border-t text-center bg-gray-50">
-              <p className="text-gray-500 mb-3">Masih ada ratusan testimoni lainnya</p>
-              <button 
-                onClick={() => alert("Fitur review lengkap akan ditambahkan nanti")}
-                className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition"
-              >
-                Lihat Semua Review →
-              </button>
+              <p className="text-gray-500">Masih ada ratusan testimoni lainnya dari pasien kami</p>
             </div>
           </div>
         </div>
