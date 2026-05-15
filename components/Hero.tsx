@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-blue-200 text-sm font-medium group-hover:text-white">1000+ Pasien Puas ★★★★★</p>
+              <p className="text-blue-200 text-sm font-medium group-hover:text-white">Ulasan Pasien Puas ★★★★★</p>
               <p className="text-blue-300 text-xs">Klik untuk melihat review</p>
             </div>
           </div>
@@ -124,7 +124,7 @@ const Hero: React.FC = () => {
 
             {/* Footer dengan tombol */}
             <div className="p-4 md:p-6 border-t text-center bg-gray-50 flex-shrink-0">
-              <p className="text-gray-500 mb-3 md:mb-4 text-sm md:text-base">Masih ada ratusan testimoni lainnya dari pasien kami</p>
+              <p className="text-gray-500 mb-3 md:mb-4 text-sm md:text-base">Masih ada banyak testimoni lainnya dari pasien kami</p>
               <button
                 onClick={handleMoreReviewsClick}
                 className="inline-flex items-center justify-center gap-2 md:gap-3 bg-blue-600 hover:bg-blue-700 text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-semibold transition-all shadow-md text-sm md:text-base w-full sm:w-auto"
