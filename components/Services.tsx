@@ -12,7 +12,7 @@ const Services: React.FC = () => {
         <img 
           src="/layanan-sunat.png" 
           alt="Jasa Khitan Modern - Mantri Home Care Kediri"
-          className="h-20 w-auto object-contain"
+          className="h-20 w-20 object-contain"
         />
       ),
       color: 'bg-blue-50'
