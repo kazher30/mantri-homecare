@@ -27,7 +27,7 @@ const HealthTips: React.FC = () => {
       items: [
         "Kontrol gula darah secara ketat setiap hari",
         "Cuci luka dengan cairan NaCl steril, jangan digosok keras",
-        "Ganti perban secara rutin sesuai jadwal yang diberikan",
+        "Ganti perban secara rutin sesuai jadwal",
         "Periksa kaki setiap hari menggunakan cermin",
         "Pakai sepatu yang nyaman dan hindari berjalan tanpa alas kaki",
         "Segera hubungi perawat jika luka semakin merah atau berbau"
@@ -101,21 +101,21 @@ const HealthTips: React.FC = () => {
           ))}
         </div>
 
-        {/* Content Card */}
-        <div className="bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-2xl">
-          <h4 className="text-2xl font-bold text-blue-900 mb-8">{currentTip.title}</h4>
+        {/* Konten Tips - Transparan */}
+        <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 md:p-12 rounded-3xl shadow-2xl">
+          <h4 className="text-2xl font-bold text-white mb-8">{currentTip.title}</h4>
           
           <ul className="space-y-4">
             {currentTip.items.map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-700">
-                <span className="text-green-500 mt-1">✔</span>
-                <span>{item}</span>
+              <li key={index} className="flex items-start gap-3 text-gray-100">
+                <span className="text-green-400 mt-1.5 text-xl">✔</span>
+                <span className="leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
 
-          <div className="mt-10 pt-8 border-t border-gray-200 text-center">
-            <p className="text-blue-700 font-medium">
+          <div className="mt-10 pt-8 border-t border-white/20 text-center">
+            <p className="text-white/90 font-medium">
               Butuh penjelasan lebih lanjut? Hubungi kami via WhatsApp
             </p>
           </div>
