@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Hero: React.FC = () => {
   const [showReviews, setShowReviews] = useState(false);
 
-  // Daftar Screenshot Review (sesuaikan nama file sesuai yang kamu simpan di folder public)
+  // Daftar Screenshot Review (sesuaikan nama file dengan yang ada di folder public)
   const reviewImages = [
     "/review1.jpeg",
     "/review2.jpeg",
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
             </a>
           </div>
 
-          {/* Testimoni Clickable - Buka Modal */}
+          {/* Testimoni Clickable */}
           <div 
             onClick={() => setShowReviews(true)}
             className="flex items-center space-x-6 pt-4 cursor-pointer hover:opacity-90 transition-all group"
@@ -117,25 +117,25 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* MODAL REVIEW - Dengan tombol yang selalu terlihat */}
+      {/* MODAL REVIEW - Responsif, tombol selalu terlihat */}
       {showReviews && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-          {/* Modal container: flex column, tinggi maks 85vh */}
-          <div className="bg-white rounded-3xl w-full max-w-5xl max-h-[85vh] flex flex-col overflow-hidden">
+          {/* Container modal: flex column, tinggi maks 90vh di mobile */}
+          <div className="bg-white rounded-3xl w-full max-w-5xl max-h-[90vh] md:max-h-[85vh] flex flex-col overflow-hidden">
             
             {/* Header sticky */}
-            <div className="p-6 border-b flex justify-between items-center sticky top-0 bg-white z-10">
-              <h3 className="text-2xl font-bold text-blue-900">Apa Kata Pasien Kami</h3>
+            <div className="p-4 md:p-6 border-b flex justify-between items-center sticky top-0 bg-white z-10">
+              <h3 className="text-xl md:text-2xl font-bold text-blue-900">Apa Kata Pasien Kami</h3>
               <button 
                 onClick={() => setShowReviews(false)}
-                className="text-4xl leading-none text-gray-400 hover:text-gray-600"
+                className="text-3xl md:text-4xl leading-none text-gray-400 hover:text-gray-600"
               >
                 ×
               </button>
             </div>
 
-            {/* Area gambar review - scrollable */}
-            <div className="p-6 grid md:grid-cols-2 gap-6 overflow-y-auto flex-1">
+            {/* Area gambar review - scrollable, grid 1 kolom di mobile, 2 kolom di md+ */}
+            <div className="p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 overflow-y-auto flex-1">
               {reviewImages.map((img, index) => (
                 <div key={index} className="rounded-2xl overflow-hidden shadow-md border border-gray-100">
                   <img 
@@ -147,18 +147,20 @@ const Hero: React.FC = () => {
               ))}
             </div>
 
-            {/* Footer dengan tombol - selalu terlihat di bawah */}
-            <div className="p-6 border-t text-center bg-gray-50 flex-shrink-0">
-              <p className="text-gray-500 mb-4">Masih ada ratusan testimoni lainnya dari pasien kami</p>
+            {/* Footer dengan tombol - selalu terlihat, flex-shrink-0 */}
+            <div className="p-4 md:p-6 border-t text-center bg-gray-50 flex-shrink-0">
+              <p className="text-gray-500 mb-3 md:mb-4 text-sm md:text-base">
+                Masih ada ratusan testimoni lainnya dari pasien kami
+              </p>
               <button
                 onClick={handleMoreReviewsClick}
-                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-all shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center gap-2 md:gap-3 bg-blue-600 hover:bg-blue-700 text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-semibold transition-all shadow-md hover:shadow-lg text-sm md:text-base w-full sm:w-auto"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
-                Lihat Semua Ulasan di Google Maps
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <span>Lihat Semua Ulasan di Google Maps</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </button>
