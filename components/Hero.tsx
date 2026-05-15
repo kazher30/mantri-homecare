@@ -13,6 +13,11 @@ const Hero: React.FC = () => {
     "/review6.jpeg",
   ];
 
+  // Handler untuk membuka link Google Maps
+  const handleMoreReviewsClick = () => {
+    window.open('https://maps.app.goo.gl/MPo7bKF3iLcrQC8r8', '_blank');
+  };
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-blue-900">
       <div className="absolute inset-0 z-0">
@@ -122,7 +127,17 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="p-6 border-t text-center bg-gray-50">
-              <p className="text-gray-500">Masih ada ratusan testimoni lainnya dari pasien kami</p>
+              <p className="text-gray-500 mb-3">Masih ada ratusan testimoni lainnya dari pasien kami</p>
+              {/* Tombol Link ke Google Maps - tambahan sesuai permintaan */}
+              <button
+                onClick={handleMoreReviewsClick}
+                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-all"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Lihat Ulasan Lainnya di Google Maps
+              </button>
             </div>
           </div>
         </div>
