@@ -50,13 +50,18 @@ const Hero: React.FC = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
-            Kesehatan Keluarga <br /> <span className="text-blue-400">Dimulai dari Rumah</span>
+            Layanan Rawat Luka & Sunat Modern <br /> <span className="text-blue-400">Terbaik di Kediri</span>
           </h1>
+
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-200 mt-4">
+            Home Care Profesional Panggilan ke Rumah 24 Jam
+          </h2>
           
           <p className="text-xl text-blue-100 max-w-lg leading-relaxed">
-            Mantri Home Care menyediakan jasa khitan modern tanpa nyeri dan perawatan luka profesional oleh tenaga kesehatan berpengalaman, langsung ke tempat Anda.
+            Mantri Home Care menyediakan <strong className="text-white">jasa rawat luka diabetes, pasca operasi, luka bakar</strong> dan 
+            <strong className="text-white"> khitan modern tanpa nyeri</strong> oleh tenaga kesehatan berpengalaman, langsung ke tempat Anda di Kediri dan sekitarnya.
           </p>
-
+          
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a href="#layanan" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl transition-all hover:-translate-y-1 text-center">
               Lihat Layanan Kami
